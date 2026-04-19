@@ -75,6 +75,8 @@ int main()
     else
         computer = 'z';
 
+    printf("GAME STARTED : ") ;
+
     printf("\n\n\n\n\t\t\t\tEnter s for STONE, p for PAPER and z for SCISSOR\n\t\t\t\t\t\t\t");
 
     // input from the user
@@ -84,7 +86,7 @@ int main()
     result = game(you, computer);
 
     if (result == -1) {
-        printf("\n\n\t\t\t\tGame Draw!\n");
+        printf("\n\n\t\t\t\tGame Draw!\n"); // Same Choice by both player and computer
     }
     else if (result == 1) {
         printf("\n\n\t\t\t\tWow! You have won the game!\n");
