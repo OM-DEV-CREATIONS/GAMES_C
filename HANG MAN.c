@@ -1,4 +1,4 @@
-// HANG MAN GAME
+// HANG MAN GAME RUNS IN TERMINAL ITSELF
 #include <ctype.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -6,8 +6,8 @@
 #include <string.h>
 #include <time.h>
 
-#define MAX_WORD_LENGTH 50
-#define MAX_TRIES 6
+#define MAX_WORD_LENGTH 60
+#define MAX_TRIES 7
 
 // Struct to hold a word and its hint
 struct WordWithHint {
@@ -95,10 +95,10 @@ int main()
         }
     }
 
-    if (tries >= MAX_TRIES) {
-        printf("\nSorry, you've run out of tries. The word "
-               "was: %s\n",
-               secretWord);
+    if (tries >= MAX_TRIES) 
+    {
+        printf("\nYou've run out of tries. The word was : %s\n",secretWord);
+        printf("You Lost !  ") ;
     }
 
     return 0;
