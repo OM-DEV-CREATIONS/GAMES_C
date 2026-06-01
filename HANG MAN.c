@@ -6,7 +6,7 @@
 #include <string.h>
 #include <time.h>
 
-#define MAX_WORD_LENGTH 60
+#define MAX_WORD_LENGTH 250
 #define MAX_TRIES 7
 
 // Struct to hold a word and its hint
@@ -29,15 +29,15 @@ int main()
     srand(time(NULL));
     // Array of words with hints
     struct WordWithHint wordList[] = {
-        { "GTA-V", "One of the Peak Realism Game even though it came in 2013 " },
+        { "gta-v", "One of the Peak Realism Game even though it came in 2013 " },
         { "elephant", "A large mammal with a trunk" },
         { "pizza", "A popular Italian dish" },
         { "beach", "Sandy shore by the sea" },
-        { "Kratos" ,"The God killer in Games"},
-        { "Wukong" , "The Monkey king"} ,
-        {"FORTRAN" , "A High-level general-purpose programming language, released by IBM in 1957."} ,
-        {"Plankalkul" , "The first high-level programming language, created by Konrad Zuse in 1943 "} ,
-        {"Bjarne Stroustrup" , "The Creator of C programming Language"}
+        { "kratos" ,"The God killer in Games"},
+        { "wukong" , "The Monkey king"} ,
+        {"fortran" , "A High-level general-purpose programming language, released by IBM in 1957."} ,
+        {"plankalkul" , "The first high-level programming language, created by Konrad Zuse in 1943 "} ,
+        {"bjarne stroustrup" , "The Creator of C programming Language"}
         // You can add more words and hints here
     };
 
